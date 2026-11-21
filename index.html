@@ -1,62 +1,314 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#090a12">
-  <meta name="description" content="Alex Morgan — creative developer and digital designer. A portfolio of selected work, experiments, and ideas.">
-  <title>Alex Morgan — Creative Developer</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <title>Haarish T S | UI Developer & Frontend Developer</title>
+  <meta name="description" content="Portfolio of Haarish T S, a UI and Frontend Developer building responsive, user-friendly web interfaces with React, TypeScript and Tailwind CSS.">
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <div class="site-shell">
-    <header class="topbar">
-      <a class="brand" href="#home" aria-label="Alex Morgan home"><span class="brand-mark">A<span>.</span></span><span class="brand-name">ALEX MORGAN</span></a>
-      <nav class="nav" aria-label="Main navigation">
-        <a href="#work">Work</a><a href="#about">About</a><a href="#contact">Contact</a>
+<body id="top">
+
+  <!-- ============ NAVIGATION ============ -->
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="logo" href="#top">HAARISH</a>
+      <ul class="nav-links">
+        <li><a href="#top">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ============ HERO ============ -->
+    <section class="hero container">
+      <div class="hero-text">
+        <span class="badge-available"><span class="dot"></span>Available for opportunities</span>
+        <p class="greeting">Hello, I'm Haarish.</p>
+        <h1>UI Developer &amp; Frontend Developer</h1>
+        <p class="lead">I build responsive, user-friendly and modern web interfaces. My background spans frontend development, UI design and software development, with hands-on work in React, TypeScript and Tailwind CSS.</p>
+        <div class="btn-row">
+          <a class="btn btn-primary" href="#projects">View My Projects</a>
+          <a class="btn btn-soft" href="#contact">Contact Me</a>
+          <!-- TODO: replace resume.pdf with the path or URL of your resume -->
+          <a class="btn btn-outline" href="resume.pdf" download>Download Resume</a>
+        </div>
+      </div>
+
+      <!-- Hero visual: a CSS-drawn browser window (no images needed) -->
+      <div class="hero-visual" aria-hidden="true">
+        <div class="browser">
+          <div class="browser-bar"><i></i><i></i><i></i></div>
+          <div class="browser-body">
+            <div class="mock-title"></div>
+            <div class="mock-line"></div>
+            <div class="mock-line short"></div>
+            <div class="mock-grid"><span></span><span></span><span></span></div>
+          </div>
+        </div>
+        <span class="chip chip-1">React.js</span>
+        <span class="chip chip-2">TypeScript</span>
+        <span class="chip chip-3">Tailwind CSS</span>
+        <span class="chip chip-4">Figma</span>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section id="about" class="section container">
+      <h2>About Me</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>I'm a B.E. Computer Science and Engineering graduate and an aspiring UI/Frontend Developer. I build responsive, user-focused web interfaces with React.js, TypeScript, JavaScript, HTML, CSS, Tailwind CSS and Bootstrap.</p>
+          <p>My work includes frontend projects, an NLP-based fraud detection application, a computer vision system and responsive web design. I also spent time in production planning and ERP software testing, which sharpened my analytical thinking, teamwork, problem-solving and process optimisation.</p>
+        </div>
+        <ul class="about-facts">
+          <li><strong>B.E. CSE</strong>K L N College of Engineering</li>
+          <li><strong>2 projects</strong>NLP and computer vision</li>
+          <li><strong>2 publications</strong>IJIRE and IJIRSET</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ CODE & FIGMA SHOWCASE ============ -->
+    <section id="showcase" class="section container">
+      <h2>Code &amp; Figma</h2>
+      <p class="showcase-intro">A quick look at how I turn ideas into working interfaces.</p>
+      <div class="showcase-grid">
+        <article class="showcase-card">
+          <div class="showcase-screen code-screen" aria-hidden="true">
+            <div class="screen-toolbar"><span class="screen-dots"><i></i><i></i><i></i></span><span>Portfolio.jsx</span><span>CODE</span></div>
+            <div class="code-preview"><span><b>1</b> <i>const</i> <strong>Portfolio</strong> = () =&gt; {"{"}</span><span><b>2</b> &nbsp;<i>return</i> (</span><span><b>3</b> &nbsp;&nbsp;&lt;<em>main</em> className="portfolio"&gt;</span><span><b>4</b> &nbsp;&nbsp;&nbsp;&lt;<em>Hero</em> title="Hello, I'm Haarish" /&gt;</span><span><b>5</b> &nbsp;&nbsp;&nbsp;&lt;<em>Projects</em> items={"{"}projects{"}"} /&gt;</span><span><b>6</b> &nbsp;&nbsp;&lt;/<em>main</em>&gt;</span><span><b>7</b> &nbsp;);</span><span><b>8</b> {"}"};</span></div>
+            <div class="screen-controls"><span class="play-icon">▶</span><span class="control-track"><i></i></span><span>01:24</span><span>▰</span></div>
+          </div>
+          <div class="showcase-caption"><h3>Building with Code</h3><p>Responsive UI brought to life with React and modern frontend tools.</p></div>
+        </article>
+        <article class="showcase-card">
+          <div class="showcase-screen figma-screen" aria-hidden="true">
+            <div class="screen-toolbar"><span class="figma-mark"><i></i><i></i><i></i><i></i><i></i></span><span>Portfolio — UI exploration</span><span>DESIGN</span></div>
+            <div class="figma-workspace"><div class="figma-tools"><i></i><i></i><i></i><i></i></div><div class="figma-artboard"><div class="artboard-nav"><b>H.</b><span>ABOUT&nbsp;&nbsp; WORK&nbsp;&nbsp; CONTACT</span></div><div class="artboard-content"><div><i>HELLO, I'M HAARISH</i><b>Designing for<br>the digital world.</b><span></span><span></span></div><div class="artboard-shape"><i></i><i></i><i></i></div></div></div><div class="figma-properties"><i></i><i></i><i></i><i></i></div><div class="selection-box"></div></div>
+            <div class="screen-controls"><span class="play-icon">▶</span><span class="control-track"><i></i></span><span>00:58</span><span>▰</span></div>
+          </div>
+          <div class="showcase-caption"><h3>Designing in Figma</h3><p>Exploring layouts, color and components before they become code.</p></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section id="skills" class="section container">
+      <h2>Technical Skills</h2>
+      <div class="skills-grid">
+        <article class="card">
+          <h3>Frontend Development</h3>
+          <ul class="tags">
+            <li>React.js</li><li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>TypeScript</li><li>Bootstrap</li><li>Tailwind CSS</li><li>Responsive UI Design</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Programming Languages</h3>
+          <ul class="tags tags-green">
+            <li>Python</li><li>JavaScript</li><li>TypeScript</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Design &amp; Development Tools</h3>
+          <ul class="tags tags-lavender">
+            <li>Figma</li><li>VS Code</li><li>PyCharm</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Backend &amp; Database Concepts</h3>
+          <ul class="tags tags-green">
+            <li>Role-Based Authentication</li><li>Encrypted Data Handling</li><li>Database Integration</li>
+          </ul>
+        </article>
+        <article class="card card-wide">
+          <h3>Other Technical Knowledge</h3>
+          <ul class="tags tags-lavender">
+            <li>Natural Language Processing (NLP)</li><li>Machine Learning – KNN</li><li>OpenCV</li><li>Tesseract OCR</li><li>Sentiment Analysis</li><li>Image Processing</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section id="projects" class="section container">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <article class="project project-blue">
+          <div class="project-visual" aria-hidden="true">
+            <span class="visual-label">Fraud risk score</span>
+            <div class="meter"><div class="meter-fill"></div></div>
+            <span class="meter-scale"><span>0</span><span>100</span></span>
+          </div>
+          <div class="project-body">
+            <h3>Search Rank for Fraudulent App Detection Using NLP</h3>
+            <ul class="project-points">
+              <li>Web platform that identifies potentially fraudulent mobile apps.</li>
+              <li>Analyses user reviews, app metadata and requested permissions.</li>
+              <li>Hybrid scoring model combining metadata analysis and NLP sentiment analysis.</li>
+              <li>Shows real-time fraud risk scores from 0–100 with risk levels.</li>
+              <li>Responsive, component-based frontend in React.js, TypeScript and Tailwind CSS.</li>
+              <li>Role-based access control and encrypted data handling.</li>
+            </ul>
+            <ul class="tags tags-small">
+              <li>React.js</li><li>TypeScript</li><li>Tailwind CSS</li><li>Python</li><li>NLP</li><li>Sentiment Analysis</li>
+            </ul>
+            <!-- TODO: replace # with your GitHub or project link -->
+            <a class="btn btn-outline" href="#">View on GitHub</a>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project project-green">
+          <div class="project-visual" aria-hidden="true">
+            <span class="visual-label">Plate detected</span>
+            <div class="plate">TN 00 AB 0000</div>
+            <span class="status">Registered vehicle</span>
+          </div>
+          <div class="project-body">
+            <h3>Real-Time License Plate Recognition System</h3>
+            <ul class="project-points">
+              <li>Automatic system that detects, extracts and validates vehicle license plates.</li>
+              <li>Image-processing pipeline: frame capture, grayscale conversion and noise reduction.</li>
+              <li>Tesseract OCR and KNN for plate recognition.</li>
+              <li>Database verification to separate registered and unregistered vehicles.</li>
+            </ul>
+            <ul class="tags tags-small">
+              <li>Python</li><li>OpenCV</li><li>Tesseract OCR</li><li>KNN</li><li>Database</li>
+            </ul>
+            <!-- TODO: replace # with your GitHub or project link -->
+            <a class="btn btn-outline" href="#">View on GitHub</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section id="experience" class="section container">
+      <h2>Experience</h2>
+      <ol class="timeline">
+        <li class="timeline-item">
+          <p class="when">August 2025 – September 2026</p>
+          <h3>Planning Executive</h3>
+          <p class="where">Jayashree Spunbond, Bangalore</p>
+          <ul>
+            <li>Analysed production schedules, inventory and operational data to identify bottlenecks.</li>
+            <li>Coordinated production planning and cross-team workflows.</li>
+            <li>Worked with the development team to test ERP software modules.</li>
+            <li>Reported software issues and gave process-based feedback for improvements.</li>
+          </ul>
+        </li>
+        <li class="timeline-item">
+          <p class="when">April 2025 – June 2025</p>
+          <h3>Web Development Intern</h3>
+          <p class="where">V7 Lancers Technopark Pvt. Ltd., Madurai</p>
+          <ul>
+            <li>Designed and developed responsive web pages with HTML, CSS, JavaScript and Bootstrap.</li>
+            <li>Worked with senior developers to implement UI layouts.</li>
+            <li>Helped improve user experience and followed modern web development practices.</li>
+          </ul>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ============ EDUCATION ============ -->
+    <section id="education" class="section container">
+      <h2>Education</h2>
+      <ol class="timeline">
+        <li class="timeline-item">
+          <p class="when">2021 – 2025</p>
+          <h3>Bachelor of Engineering – Computer Science and Engineering</h3>
+          <p class="where">K L N College of Engineering</p>
+          <p>CGPA: 6.91</p>
+        </li>
+        <li class="timeline-item">
+          <p class="when">2021</p>
+          <h3>Higher Secondary – Computer Science</h3>
+          <p class="where">Sri Aurobindo Mira Matriculation Higher Secondary School</p>
+          <p>Percentage: 75.6%</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ============ PUBLICATIONS & ACHIEVEMENTS ============ -->
+    <section id="achievements" class="section container">
+      <h2>Publications &amp; Achievements</h2>
+      <div class="cards-3">
+        <article class="card">
+          <h3>Real Time License Plate Detection System Using KNN and Machine Learning</h3>
+          <p class="meta">Publication · IJIRE</p>
+        </article>
+        <article class="card">
+          <h3>Search Rank for Fraudulent App Detection Using NLP</h3>
+          <p class="meta">Publication · IJIRSET</p>
+        </article>
+        <article class="card">
+          <h3>Organizer, TECH FEST 2K24</h3>
+          <p class="meta">K L N College of Engineering</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ CERTIFICATIONS ============ -->
+    <section id="certifications" class="section container">
+      <h2>Certifications</h2>
+      <ul class="cert-list">
+        <li><strong>AWS Academy Cloud Foundations</strong>Amazon Web Services</li>
+        <li><strong>Claude Code Course: Build &amp; Deploy AI Applications</strong>GUVI</li>
+        <li><strong>Privacy and Security in Online Social Media</strong>NPTEL (Elite Certificate)</li>
+        <li><strong>Python Training</strong>Spoken Tutorial</li>
+      </ul>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section id="contact" class="section container">
+      <div class="contact-box">
+        <h2>Let's connect</h2>
+        <p>Have an opportunity, project, or idea in mind? Let's connect and build something meaningful.</p>
+        <ul class="contact-list">
+          <li><span>Email</span><a href="mailto:hhaarish020@gmail.com">hhaarish020@gmail.com</a></li>
+          <li><span>LinkedIn</span><a href="https://linkedin.com/in/haarish-ts" target="_blank" rel="noopener">linkedin.com/in/haarish-ts</a></li>
+          <li><span>Location</span>India</li>
+        </ul>
+        <a class="btn btn-primary" href="mailto:hhaarish020@gmail.com">Send an Email</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <p class="footer-name">Haarish T S</p>
+        <p>UI Developer | Frontend Developer</p>
+        <p class="copyright">&copy; 2026 Haarish T S. All rights reserved.</p>
+      </div>
+      <nav aria-label="Footer navigation">
+        <ul class="footer-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
       </nav>
-      <a class="availability" href="#contact"><span class="status-dot"></span> AVAILABLE FOR WORK</a>
-    </header>
+    </div>
+  </footer>
 
-    <main id="home">
-      <section class="hero" aria-labelledby="hero-title">
-        <div class="hero-copy">
-          <p class="eyebrow"><span class="eyebrow-line"></span> INDEPENDENT DESIGNER &amp; DEVELOPER</p>
-          <h1 id="hero-title">I make the<br>digital feel <span class="alive">alive<span class="period">.</span></span></h1>
-          <p class="intro">I’m Alex — a creative developer building thoughtful digital experiences with a little extra dimension.</p>
-          <div class="hero-actions"><a class="button button-primary" href="#work">Explore my work <span aria-hidden="true">↘</span></a><a class="text-link" href="#about">A little about me <span aria-hidden="true">↗</span></a></div>
-          <div class="hero-meta"><span>BASED IN BROOKLYN, NY</span><span class="meta-divider"></span><span>WORKING WORLDWIDE</span></div>
-        </div>
+  <!-- Floating Back to Top link -->
+  <a class="to-top" href="#top" aria-label="Back to top">&uarr;</a>
 
-        <div class="visual" aria-label="Abstract 3D violet glass sculpture">
-          <div class="visual-grid"></div>
-          <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
-          <div class="spark spark-one">✳</div><div class="spark spark-two">✦</div>
-          <div class="cube-wrap"><div class="cube"><span class="face front"></span><span class="face back"></span><span class="face right"></span><span class="face left"></span><span class="face top"></span><span class="face bottom"></span></div></div>
-          <div class="visual-label"><span>FIG. 01</span><span>FORM IN MOTION</span></div>
-          <div class="visual-coordinates">40°42'46.8"N<br>74°00'21.6"W</div>
-        </div>
-        <div class="scroll-note"><span class="scroll-line"></span> SCROLL TO EXPLORE</div>
-      </section>
-
-      <section class="work-section" id="work">
-        <div class="section-heading"><div><p class="eyebrow"><span class="eyebrow-line"></span> A FEW GOOD THINGS</p><h2>Selected work<span class="period">.</span></h2></div><span class="section-index">01 — 03</span></div>
-        <div class="project-grid">
-          <a class="project-card project-one" href="#contact"><div class="project-art art-one"><div class="art-ring"></div><div class="art-orb"></div><span class="art-caption">Nº 01 / DIGITAL</span></div><div class="project-info"><div><h3>Forma Studio</h3><p>Brand platform · 2025</p></div><span class="project-arrow">↗</span></div></a>
-          <a class="project-card project-two" href="#contact"><div class="project-art art-two"><div class="art-panel"><span>somewhere<br>in between</span></div><span class="art-caption">Nº 02 / CAMPAIGN</span></div><div class="project-info"><div><h3>Somewhere Else</h3><p>Art direction · 2024</p></div><span class="project-arrow">↗</span></div></a>
-          <a class="project-card project-three" href="#contact"><div class="project-art art-three"><div class="art-sphere"></div><div class="art-sphere-shadow"></div><span class="art-caption">Nº 03 / EXPERIMENT</span></div><div class="project-info"><div><h3>Soft Matter</h3><p>Web experience · 2024</p></div><span class="project-arrow">↗</span></div></a>
-        </div>
-      </section>
-
-      <section class="about-section" id="about"><div class="about-tag">A NOTE FROM ALEX <span>✳</span></div><div class="about-content"><h2>Curiosity first.<br>Pixels second<span class="period">.</span></h2><div class="about-text"><p>I’m an independent creative developer who likes the space where good ideas, good design, and good technology overlap.</p><p>From first sketch to final interaction, I help ambitious people turn their big ideas into digital things that feel unmistakably human.</p><a class="text-link" href="#contact">More about my approach <span aria-hidden="true">↗</span></a></div></div><div class="about-bottom"><span>GOOD WORK, GOOD PEOPLE.</span><span>EST. 2019 — ALWAYS LEARNING</span></div></section>
-
-      <section class="contact-section" id="contact"><p class="eyebrow"><span class="eyebrow-line"></span> HAVE A GOOD ONE IN MIND?</p><h2>Let’s make<br>it <span class="alive">happen<span class="period">.</span></span></h2><div class="contact-bottom"><p>Have a project, a question, or a great playlist?<br>My inbox is open.</p><a class="button button-primary" href="mailto:hello@example.com">Say hello <span aria-hidden="true">↗</span></a></div></section>
-    </main>
-
-    <footer class="footer"><a class="brand" href="#home"><span class="brand-mark">A<span>.</span></span><span class="brand-name">ALEX MORGAN</span></a><span>DESIGNED WITH INTENTION · © 2025</span><div class="social-links"><a href="https://www.linkedin.com/" aria-label="LinkedIn">IN ↗</a><a href="https://www.instagram.com/" aria-label="Instagram">IG ↗</a><a href="mailto:hello@example.com" aria-label="Email">MAIL ↗</a></div></footer>
-  </div>
 </body>
 </html>
